@@ -1,0 +1,178 @@
+.landing-view {
+  background: url("./img/bg2.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.landing-content {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  right: 5%;
+  transform: translate(-10%, -50%);
+  background: transparent;
+}
+
+.landing-content h3,
+.landing-content p,
+.landing-content h2,
+.landing-grid {
+  background: transparent;
+}
+
+.landing-content h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.landing-content h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.landing-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 1.3rem;
+}
+
+.btn-blue {
+  background: rgb(0, 98, 255);
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-blue:hover {
+  background: rgb(4, 85, 214);
+}
+
+.btn-outline {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.nav-links i {
+  font-size: 10px;
+}
+
+.text-container {
+  padding: 50px;
+}
+
+.text-container h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2rem;
+  max-width: 850px;
+  margin: auto;
+}
+
+.ms-office {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.office {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  margin-bottom: 5px;
+  z-index: 1;
+}
+
+.office:hover {
+  box-shadow: 0px 0px 10px 3px rgb(187, 187, 187);
+}
+
+.left-ms-office {
+  display: grid;
+  grid-template-columns: 450px;
+}
+
+.office > i {
+  margin-right: 12px;
+}
+
+.ms-office-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ms-office-content img {
+  width: 35px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.ms-office-content div:first-child {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.right-ms-office {
+  position: relative;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.word {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.word img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding: 1.2rem;
+  display: none;
+}
+.ms-office-content div:nth-child(2) {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.active2 {
+  display: grid !important;
+  z-index: 100;
+  animation: op 1s ease-in-out forwards;
+}
+
+@keyframes op {
+  from {
+    opacity: 0;
+    top: 10%;
+  }
+  to {
+    opacity: 1;
+    top: 0%;
+  }
+}
