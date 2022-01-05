@@ -1,0 +1,154 @@
+@media (max-width: 1068px) {
+  .nav-container {
+    display: none;
+  }
+  .navigation-container2 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 13px;
+  }
+  .navigation-container2 .left {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  .navigation-container2 .middle {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navigation-container2 .middle img {
+    height: 100%;
+    padding: 10px;
+  }
+  .navigation-container2 .right {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60%;
+  }
+  .navigation-container2 .left i {
+    margin: 10px;
+  }
+
+  .navigation-container2 .right i {
+    font-size: 1rem;
+  }
+  .navigation-container2 .right img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .nav-links2 {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .item-container > div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 5px;
+  }
+  .item-container > div img {
+    width: 20px;
+  }
+  .item-container > div p {
+    font-size: 1rem;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-bottom-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: max-content; */
+    max-width: 400px;
+  }
+  .footer-bottom-right ul li {
+    margin: 5px;
+  }
+  .carousel {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 542px) {
+  .carousel {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .more-container {
+    height: 253px;
+  }
+
+  .more-content {
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 14rem;
+    background: rgba(238, 238, 238, 0.99);
+  }
+
+  .more-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .more-content p {
+    font-size: 14px;
+  }
+
+  .more-content a {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+  }
+
+  .grid-content p {
+    max-width: none;
+  }
+
+  .grid h1 {
+    margin-left: 2rem;
+    margin-top: 17rem;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
